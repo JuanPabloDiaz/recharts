@@ -37,7 +37,7 @@ In this repository, you'll find the following charts:
 
 ### Built With 🔑
 
-Welcome to the [freecodecamp](https://freecodecamp.jpdiaz.dev), collection.
+Welcome to the [recharts](https://recharts.jpdiaz.dev), collection.
 
 ![Recharts](https://img.shields.io/badge/Recharts-61DAFB.svg?style=for-the-badge&logo=Recharts&logoColor=black)
 ![Nextjs](https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=Next.js&logoColor=white)
@@ -45,7 +45,7 @@ Welcome to the [freecodecamp](https://freecodecamp.jpdiaz.dev), collection.
 
 ## Get started 🛠️
 
-To get started with [freecodecamp](https://freecodecamp.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
+To get started with [recharts](https://recharts.jpdiaz.dev), simply clone the repository and follow the setup instructions. You'll be up and running in no time!
 
 ### Setup 📋
 
@@ -72,7 +72,7 @@ I welcome contributions to the repo! Feel free to fork the repository and submit
 
 [recharts](https://recharts.jpdiaz.dev) is licensed under the MIT License.
 
-I hope you enjoy using the freecodecamp repo!
+I hope you enjoy using the recharts repo!
 
 <!-- ACKNOWLEDGMENTS -->
 
