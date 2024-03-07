@@ -12,6 +12,12 @@ import ScatterChart from "./components/ScatterChart";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center px-4 md:px-8 xl:px-10 py-44">
+      <h1 className="text-4xl font-bold text-white/60 mb-8">
+        Data Visualization
+      </h1>
+      <h2 className="text-2xl font-semibold text-white/40 mb-8">
+        A collection of charts built with Recharts
+      </h2>
       <div className="grid xl:grid-cols-3 lg:grid-cols-2 w-full gap-10 max-w-[1400px]">
         <GridItem title="Scatter Chart">
           <ScatterChart />

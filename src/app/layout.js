@@ -1,17 +1,21 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Footer } from "./components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Recharts Next.js',
-  description: 'An example of using Recharts with Next.js',
+  title: "Recharts Next.js",
+  description: "An example of using Recharts with Next.js",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-slate-950 text-white">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className="bg-slate-950 text-white flex flex-col min-h-screen">
+        <main className={`flex-grow ${inter.className}`}>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
