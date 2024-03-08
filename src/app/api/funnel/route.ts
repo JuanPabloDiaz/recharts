@@ -1,5 +1,5 @@
 export async function GET() {
-  const data = [
+  const funnel = [
     {
       value: 100,
       name: "展现",
@@ -27,5 +27,5 @@ export async function GET() {
     },
   ];
 
-  return Response.json({ data });
+  return Response.json({ funnel });
 }
