@@ -99,8 +99,108 @@ export const AppProvider = ({ children }) => {
     fetch("api/line")
       .then((response) => response.json())
       .then((json) => {
-        console.log("Data Line: ", json);
-        setDataFunnel(json);
+        // console.log("Data Line: ", json);
+        setDataLine(json);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // *****************       PIE        *****************
+
+  // const [dataPie, setDataPie] = useState([]);
+
+  // useEffect(() => {
+  //   setIsLoading(true);
+
+  //   fetch("api/pie")
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       console.log("Data Pie: ", json);
+  //       setDataPie(json);
+  //       setIsLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data: ", error);
+  //       setIsLoading(false);
+  //     });
+  // }, []);
+
+  // *****************       SCATTER        *****************
+
+  // const [dataScatter, setDataScatter] = useState([]);
+
+  // useEffect(() => {
+  //   setIsLoading(true);
+
+  //   fetch("api/pie")
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       console.log("Data Scatter: ", json);
+  //       setDataScatter(json);
+  //       setIsLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching data: ", error);
+  //       setIsLoading(false);
+  //     });
+  // }, []);
+
+  // *****************       RADAR        *****************
+
+  const [dataRadar, setDataRadar] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch("api/radar")
+      .then((response) => response.json())
+      .then((json) => {
+        // console.log("Data Radar: ", json);
+        setDataRadar(json);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // *****************       RADIAL BAR        *****************
+
+  const [dataRadialBar, setDataRadialBar] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch("api/radial")
+      .then((response) => response.json())
+      .then((json) => {
+        // console.log("Data Radial Bar: ", json);
+        setDataRadialBar(json);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // *****************       TREEMAP        *****************
+
+  const [dataTreemap, setDataTreemap] = useState([]);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch("api/treemap")
+      .then((response) => response.json())
+      .then((json) => {
+        // console.log("Data Treemap: ", json);
+        setDataTreemap(json);
         setIsLoading(false);
       })
       .catch((error) => {
@@ -123,6 +223,16 @@ export const AppProvider = ({ children }) => {
         setDataFunnel,
         dataLine,
         setDataLine,
+        // dataPie,
+        // setDataPie,
+        // dataScatter,
+        // setDataScatter,
+        dataRadar,
+        setDataRadar,
+        dataRadialBar,
+        setDataRadialBar,
+        dataTreemap,
+        setDataTreemap,
       }}
     >
       {children}
