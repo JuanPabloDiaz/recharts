@@ -132,23 +132,23 @@ export const AppProvider = ({ children }) => {
 
   // *****************       SCATTER        *****************
 
-  // const [dataScatter, setDataScatter] = useState([]);
+  const [dataScatter, setDataScatter] = useState([]);
 
-  // useEffect(() => {
-  //   setIsLoading(true);
+  useEffect(() => {
+    setIsLoading(true);
 
-  //   fetch("api/pie")
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       console.log("Data Scatter: ", json);
-  //       setDataScatter(json);
-  //       setIsLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data: ", error);
-  //       setIsLoading(false);
-  //     });
-  // }, []);
+    fetch("api/scatter")
+      .then((response) => response.json())
+      .then((json) => {
+        // console.log("Data Scatter: ", json);
+        setDataScatter(json);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setIsLoading(false);
+      });
+  }, []);
 
   // *****************       RADAR        *****************
 
@@ -226,8 +226,8 @@ export const AppProvider = ({ children }) => {
         setDataLine,
         dataPie,
         setDataPie,
-        // dataScatter,
-        // setDataScatter,
+        dataScatter,
+        setDataScatter,
         dataRadar,
         setDataRadar,
         dataRadialBar,
