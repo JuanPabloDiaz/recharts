@@ -111,23 +111,24 @@ export const AppProvider = ({ children }) => {
 
   // *****************       PIE        *****************
 
-  // const [dataPie, setDataPie] = useState([]);
+  const [dataPie, setDataPie] = useState([]);
 
-  // useEffect(() => {
-  //   setIsLoading(true);
+  useEffect(() => {
+    setIsLoading(true);
 
-  //   fetch("api/pie")
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       console.log("Data Pie: ", json);
-  //       setDataPie(json);
-  //       setIsLoading(false);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching data: ", error);
-  //       setIsLoading(false);
-  //     });
-  // }, []);
+    fetch("api/pie")
+      .then((response) => response.json())
+      .then((json) => {
+        // console.log("Data Pie: ", json);
+        // console.log("Data01: ", json.data01);
+        setDataPie(json);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+        setIsLoading(false);
+      });
+  }, []);
 
   // *****************       SCATTER        *****************
 
@@ -223,8 +224,8 @@ export const AppProvider = ({ children }) => {
         setDataFunnel,
         dataLine,
         setDataLine,
-        // dataPie,
-        // setDataPie,
+        dataPie,
+        setDataPie,
         // dataScatter,
         // setDataScatter,
         dataRadar,
