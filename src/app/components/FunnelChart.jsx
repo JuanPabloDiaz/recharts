@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
+import { Loading } from "./Loading";
+
 import {
   Funnel,
   FunnelChart,
@@ -14,7 +16,7 @@ const FunnelChartComponent = () => {
   const { dataFunnel, isLoading } = useContext(AppContext);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (
@@ -24,7 +26,7 @@ const FunnelChartComponent = () => {
         <Funnel dataKey="value" data={dataFunnel} isAnimationActive>
           <LabelList
             position="right"
-            fill="#000"
+            // fill="#000" // color of the text
             stroke="none"
             dataKey="name"
           />

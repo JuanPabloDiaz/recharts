@@ -2,13 +2,15 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
+import { Loading } from "./Loading";
+
 import { ResponsiveContainer, Treemap } from "recharts";
 
 const TreemapComponent = () => {
   const { dataTreemap, isLoading } = useContext(AppContext);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

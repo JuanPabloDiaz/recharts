@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
+import { Loading } from "./Loading";
+
 import {
   AreaChart,
   Area,
@@ -17,7 +19,7 @@ const AreaChartComponent = () => {
   const { dataArea, isLoading } = useContext(AppContext);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

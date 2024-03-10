@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
+import { Loading } from "./Loading";
+
 import {
   BarChart,
   Bar,
@@ -17,7 +19,7 @@ const BarChartComponent = () => {
   const { dataBar, isLoading } = useContext(AppContext);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (

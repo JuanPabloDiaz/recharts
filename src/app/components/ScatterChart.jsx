@@ -2,6 +2,8 @@
 import React, { useContext } from "react";
 import { AppContext } from "../../context";
 
+import { Loading } from "./Loading";
+
 import {
   CartesianGrid,
   Legend,
@@ -29,7 +31,7 @@ const ScatterChartComponent = () => {
   const { dataScatter, isLoading } = useContext(AppContext);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loading />;
   }
 
   return (
