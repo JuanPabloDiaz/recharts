@@ -9,9 +9,12 @@ import FunnelChart from "./components/FunnelChart";
 import Treemap from "./components/Treemap";
 import ScatterChart from "./components/ScatterChart";
 
+import { MdiGraphLine } from "./components/icons";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-4 md:px-8 xl:px-10 py-44">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4 md:px-8 xl:px-10 py-24">
+      <MdiGraphLine className="text-white/60 w-16 h-16" />
       <h1 className="text-4xl font-bold text-white/60 mb-8">
         Data Visualization
       </h1>
