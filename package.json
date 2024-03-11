@@ -16,7 +16,7 @@
     "next": "14.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "recharts": "^2.10.1",
+    "recharts": "^2.12.0",
     "tailwind": "^4.0.0",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7"
