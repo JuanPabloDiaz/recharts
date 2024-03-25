@@ -66,7 +66,7 @@ To get started with [recharts](https://recharts.jpdiaz.dev), simply clone the re
 
 ## Contribution 🤝
 
-I welcome contributions to the repo! Feel free to fork the repository and submit pull requests with your improvements.
+All contributions are welcome. Please read the [CONTRIBUTING guidelines](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 ### Contributors
 
